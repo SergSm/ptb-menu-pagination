@@ -18,7 +18,7 @@ class Menu:
 
 def get_menu(total_items: int,
              current_page: int,
-             menu_settings) -> list[list[InlineKeyboardButton]]:
+             menu_settings: Menu) -> list[list[InlineKeyboardButton]]:
 
     total_pages = ceil(total_items / menu_settings.items_per_page)
     total_lines = ceil(total_pages / menu_settings.pages_per_line)
