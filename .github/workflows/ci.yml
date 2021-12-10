@@ -1,0 +1,50 @@
+name: ci
+
+# Run this workflow every time a new commit pushed to your repository
+on:
+  - push
+  - pull_request
+  -
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  ci:
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python  ${{ matrix.python-version}}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry pytest pytest-cov
+          make install
+      - name: Lint flake8
+        run: |
+          make lint
+        env:
+          DEFAULT_BRANCH: master
+      - name: Run pytest
+        run:
+          make test
+      - name: Generate coverage report
+        run : |
+          poetry run coverage run -m pytest
+#      - name: Update test coverage on codeclimate
+#        uses: paambaati/codeclimate-action@v2.7.4
+#        env:
+#          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+#          DEFAULT_BRANCH: master
+#        with:
+#          coverageCommand: poetry run coverage xml

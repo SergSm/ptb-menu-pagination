@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "menu-pagination"
+version = "0.2.0"
+description = "Creates google-like navigation menu using python-telegram-bot wrapper"
+authors = ["Smirnov Sergey"]
+license = "MIT"
+
+packages = [
+    {include = 'paginator'}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-telegram-bot = "^13.8.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+pytest = "^6.2.5"
+python-dotenv = "^0.19.2"
+pytest-cov = "^3.0.0"
+
+[tool.coverage.run]
+omit = [".*", "*/site-packages/*"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
