@@ -13,11 +13,24 @@ In other words it builds a menu for navigation if you have
 a lot of search results or whatever list of anything 
 
 ### Installation
+
+```
+pip install ptb-menu-navigation
+```
+
+
+or if you are working with source code and use Poetry tool:
+
 ```
 make install
 ```
 
 ### Usage
+```python
+from paginator import get_menu
+```
+
+
 Use ```get_menu``` function to create a line of pages
 
 #### Example:
