@@ -6,11 +6,14 @@
 # Description
 
 Makes a google style pagination line for a list of items.
- 
-<img src="https://github.com/SergSm/py_telegram_bot_conversation_handler/blob/main/example/media/example.png" width="300" height="490">
+
+![](https://github.com/SergSm/ptb-menu-pagination/blob/main/example/media/example.png) ![](https://github.com/SergSm/ptb-menu-pagination/raw/main/example/media/example.png)
 
 In other words it builds a menu for navigation if you have 
 a lot of search results or whatever list of anything 
+
+![](https://github.com/SergSm/ptb-menu-pagination/blob/main/example/media/example2.png) ![](https://github.com/SergSm/ptb-menu-pagination/raw/main/example/media/example2.png)
+
 
 ### Installation
 
