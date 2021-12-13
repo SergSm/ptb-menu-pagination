@@ -75,7 +75,7 @@ See ```examples/search_bot.py```
 Create a ```.env``` file with a ```TOKEN``` variable
 inside of an ```/examples``` for launching 
 the
-[demo](https://github.com/SergSm/menu_pagination/blob/main/example/search_bot.py) bot.\
+[demo](https://github.com/SergSm/ptb-menu-pagination/blob/main/example/search_bot.py) bot.\
 eg:\
 ```TOKEN=<YOUR_TELEGRAM_BOT_TOKEN_FROM_BOT_FATHER>```
 
