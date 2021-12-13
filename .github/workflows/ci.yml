@@ -41,10 +41,10 @@ jobs:
       - name: Generate coverage report
         run : |
           poetry run coverage run -m pytest
-#      - name: Update test coverage on codeclimate
-#        uses: paambaati/codeclimate-action@v2.7.4
-#        env:
-#          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-#          DEFAULT_BRANCH: master
-#        with:
-#          coverageCommand: poetry run coverage xml
+      - name: Update test coverage on codeclimate
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          DEFAULT_BRANCH: master
+        with:
+          coverageCommand: poetry run coverage xml
