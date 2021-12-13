@@ -4,6 +4,9 @@ version = "0.2.0"
 description = "Creates google-like navigation menu using python-telegram-bot wrapper"
 authors = ["Smirnov Sergey"]
 license = "MIT"
+repository= 'https://github.com/SergSm/ptb-menu-pagination'
+readme = 'README.md'
+keywords = ['python-telegram-bot','pagination','menu','telegram-bot', 'telegram-bot-pagination']
 
 packages = [
     {include = 'paginator'}
