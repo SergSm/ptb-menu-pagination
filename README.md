@@ -12,7 +12,7 @@ Makes a google style pagination line for a list of items.
 In other words it builds a menu for navigation if you have 
 a lot of search results or whatever list of anything 
 
-![](https://github.com/SergSm/ptb-menu-pagination/blob/main/example/media/example.png)
+![](https://github.com/SergSm/ptb-menu-pagination/blob/main/example/media/example3.png)
 
 
 ### Installation
