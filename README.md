@@ -1,4 +1,6 @@
 # python telegram bot menu pagination
+[![Maintainability](https://api.codeclimate.com/v1/badges/9eade003d09d837c852e/maintainability)](https://codeclimate.com/github/SergSm/ptb-menu-pagination/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9eade003d09d837c852e/test_coverage)](https://codeclimate.com/github/SergSm/ptb-menu-pagination/test_coverage)
 
 Makes a google style pagination line for a list of items.
  
