@@ -3,6 +3,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9eade003d09d837c852e/maintainability)](https://codeclimate.com/github/SergSm/ptb-menu-pagination/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9eade003d09d837c852e/test_coverage)](https://codeclimate.com/github/SergSm/ptb-menu-pagination/test_coverage)
 
+# Description
+
 Makes a google style pagination line for a list of items.
  
 <img src="https://github.com/SergSm/py_telegram_bot_conversation_handler/blob/main/example/media/example.png" width="300" height="490">

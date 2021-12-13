@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "menu-pagination"
+name = "ptb-menu-pagination"
 version = "0.2.0"
 description = "Creates google-like navigation menu using python-telegram-bot wrapper"
 authors = ["Smirnov Sergey"]
