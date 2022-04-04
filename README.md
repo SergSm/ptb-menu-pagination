@@ -14,6 +14,40 @@ a lot of search results or whatever list of anything
 
 ![](https://github.com/SergSm/ptb-menu-pagination/raw/main/example/media/example3.png)
 
+## Project structure
+```
+│   .gitignore
+│   LICENSE
+│   Makefile
+│   poetry.lock
+│   pyproject.toml
+│   README.md
+├───.github/
+│   └───workflows/
+│           ci.yml
+├───example/
+│   │   search_bot.py
+│   │
+│   ├───fixtures
+│   │       data.txt
+│   │
+│   └───media/
+│           example2.png
+│           example3.png
+├───paginator/
+│   │   consts.py
+│   │   main.py
+│   │   __init__.py
+│   └───composers/
+│           map.py
+│           menu.py
+│           __init__.py
+└───tests/
+    │   test_paginator_get_menu.py
+    │   __init__.py
+    └───fixtures/
+            fixtures.py
+```
 
 ### Installation
 
