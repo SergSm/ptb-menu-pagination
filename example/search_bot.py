@@ -380,7 +380,7 @@ def main():
     # user input handler
     dispatcher.add_handler(search_conversation_handler)
 
-    # # Adding navigation handler
+    # navigation handler
     dispatcher.add_handler(
         CallbackQueryHandler(navigate,
                              pattern='^[0-9]+'          # page number
